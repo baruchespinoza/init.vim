@@ -2,8 +2,9 @@
 " $ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 " $ pip3 install neovim
 " :PlugInstall
+set sidescroll=1
 let mapleader = ','
-nnoremap <script> <silent> <unique> <Leader>a :BufExplorerHorizontalSplit<CR>
+nnoremap <script> <silent> <Leader>a :BufExplorerHorizontalSplit<CR>
 call plug#begin('~/.vim/plugged')
 Plug 'Baruch4413/config.vim'
 Plug 'tpope/vim-sensible'
@@ -12,7 +13,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'tomtom/tcomment_vim'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'easymotion/vim-easymotion'
 Plug 'airblade/vim-gitgutter'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'vim-airline/vim-airline'
@@ -26,7 +26,8 @@ else
 endif
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-" Plug 'w0rp/ale'
+Plug 'w0rp/ale'
+Plug 'wellle/targets.vim'
 call plug#end()
 let g:airline_theme='oceanicnext'
 let g:oceanic_next_terminal_bold = 1
