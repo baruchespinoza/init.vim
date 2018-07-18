@@ -16,7 +16,9 @@ Plug 'tpope/vim-repeat'
 Plug 'airblade/vim-gitgutter'
 Plug 'jlanzarotta/bufexplorer'
 Plug 'vim-airline/vim-airline'
-Plug 'mhartington/oceanic-next'
+" Plug 'mhartington/oceanic-next'
+" Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'joshdick/onedark.vim'
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 else
@@ -28,8 +30,15 @@ Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'w0rp/ale'
 Plug 'wellle/targets.vim'
+Plug 'jacobsimpson/nvim-example-python-plugin'
 call plug#end()
-let g:airline_theme='oceanicnext'
-let g:oceanic_next_terminal_bold = 1
-let g:oceanic_next_terminal_italic = 1
-colorscheme OceanicNext
+
+colorscheme onedark
+let g:airline_theme='onedark'
+let g:onedark_termcolors=256
+let g:onedark_terminal_italics=1
+
+" let g:airline_theme='oceanicnext'
+" let g:oceanic_next_terminal_bold = 1
+" let g:oceanic_next_terminal_italic = 1
+" colorscheme OceanicNext
