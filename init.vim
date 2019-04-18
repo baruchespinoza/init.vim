@@ -16,4 +16,5 @@ Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'tyru/caw.vim'
+Plug 'posva/vim-vue'
 call plug#end()
