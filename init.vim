@@ -21,5 +21,8 @@ Plug 'christoomey/vim-sort-motion'
 call plug#end()
 colorscheme nord
 lua << EOF
-require("bufferline").setup{}
+require("bufferline").setup{
+    numbers = "buffer_id",
+    number_style = "superscript"
+}
 EOF
